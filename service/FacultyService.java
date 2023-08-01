@@ -21,6 +21,8 @@ public class FacultyService {
         return facultyRepository.getById(idFaculty);
     }
 
+
+
     public Faculty updateFaculty(Faculty faculty) {
         return facultyRepository.save(faculty);
     }

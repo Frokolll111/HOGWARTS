@@ -10,6 +10,9 @@ public class Student {
     String name;
     int age;
 
+
+
+
     @ManyToOne
     @JoinColumn(name = "faculty_id")
             private Faculty faculty;

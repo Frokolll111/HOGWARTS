@@ -16,6 +16,8 @@ public class Faculty {
     private Collection<Student> student;
 
 
+
+
     public Faculty(Long id, String name, String color) {
         this.id = id;
         this.name = name;

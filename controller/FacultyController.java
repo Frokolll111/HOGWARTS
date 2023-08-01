@@ -13,9 +13,11 @@ import java.util.Collection;
 public class FacultyController {
     private final FacultyService facultyService;
 
+
     public FacultyController(FacultyService facultyService) {
         this.facultyService = facultyService;
     }
+
 
     @PostMapping
     public Faculty createFaculty(@RequestBody Faculty faculty) {

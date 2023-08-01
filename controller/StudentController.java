@@ -13,14 +13,17 @@ import java.util.Collection;
 public class StudentController {
     private final StudentService studentService;
 
+
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
+
 
     @PostMapping(consumes = {"application/xml", "application/json"})
     public Student createStudent(@RequestBody Student student) {
         return studentService.createStudent(student);
     }
+
 
     @GetMapping("{idStudent}")
     public ResponseEntity<Student> readStudent(@PathVariable long idStudent) {
